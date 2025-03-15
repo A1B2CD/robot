@@ -1,0 +1,169 @@
+{
+   "SimulinkModel" : {
+      "FromVortex" : [
+         {
+            "Dataname" : "q1",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "q2",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "q3",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "q4",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "q5",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "q6",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "q7",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "q8",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "T_vx_tail",
+            "Datatype" : "double",
+            "Dimension" : 16
+         },
+         {
+            "Dataname" : "T_vx_head",
+            "Datatype" : "double",
+            "Dimension" : 16
+         },
+         {
+            "Dataname" : "v_vx_tail",
+            "Datatype" : "double",
+            "Dimension" : 3
+         },
+         {
+            "Dataname" : "w_vx_tail",
+            "Datatype" : "double",
+            "Dimension" : 3
+         },
+         {
+            "Dataname" : "v_vx_head",
+            "Datatype" : "double",
+            "Dimension" : 3
+         },
+         {
+            "Dataname" : "w_vx_head",
+            "Datatype" : "double",
+            "Dimension" : 3
+         },
+         {
+            "Dataname" : "T_vx_cm",
+            "Datatype" : "double",
+            "Dimension" : 16
+         },
+         {
+            "Dataname" : "v_vx_cm",
+            "Datatype" : "double",
+            "Dimension" : 3
+         },
+         {
+            "Dataname" : "w_vx_cm",
+            "Datatype" : "double",
+            "Dimension" : 3
+         }
+      ],
+      "ToVortex" : [
+         {
+            "Dataname" : "q1_cmd",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "q2_cmd",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "q3_cmd",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "q4_cmd",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "q5_cmd",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "q6_cmd",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "q7_cmd",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "q8_cmd",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "u1_rpm",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "u2_rpm",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "u3_rpm",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "u4_rpm",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "u5_rpm",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "u6_rpm",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "u7_rpm",
+            "Datatype" : "double",
+            "Dimension" : 1
+         }
+      ],
+      "VortexModuleType" : "My Model"
+   }
+}

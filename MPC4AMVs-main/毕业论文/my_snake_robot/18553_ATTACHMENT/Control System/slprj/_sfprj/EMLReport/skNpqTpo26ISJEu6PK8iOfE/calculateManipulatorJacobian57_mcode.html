@@ -1,0 +1,26 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<body>
+<script src="resources/eml_report_loadable_data.js"></script>
+<pre class="code">
+<span class="srcline"><span class="lineno"><a href="28,1" id="srcline1"> 1</a></span><span class="line"><span class="keyword">function</span> <span class="var type1" id="S2T23U3">J_manipulator_spatial</span> = calculateManipulatorJacobian(<span class="var type2" id="S3T8V2U6">num_joints</span>, <span class="var type1" id="S4T20U7">g_joints_home</span>, <span class="var type1" id="S5T23U8">bodyTwists</span>)</span></span>
+<span class="srcline"><span class="lineno"><a href="28,2" id="srcline2"> 2</a></span><span class="line"><span class="comment">%#codegen</span></span></span>
+<span class="srcline"><span class="lineno"><a href="28,3" id="srcline3"> 3</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="28,4" id="srcline4"> 4</a></span><span class="line"><span class="comment">% g_joints_home are the homogeneous transformations from the base frame Fb to the</span></span></span>
+<span class="srcline"><span class="lineno"><a href="28,5" id="srcline5"> 5</a></span><span class="line"><span class="comment">% frame of joint i at home position Fi(q_i=0)</span></span></span>
+<span class="srcline"><span class="lineno"><a href="28,6" id="srcline6"> 6</a></span><span class="line"><span class="comment">% bodyTwists is the 6xn-1 matrix of n-1 column vectors respresenting the body</span></span></span>
+<span class="srcline"><span class="lineno"><a href="28,7" id="srcline7"> 7</a></span><span class="line"><span class="comment">% joint twists of each joint, i.e. defining the local (body) axis of translation</span></span></span>
+<span class="srcline"><span class="lineno"><a href="28,8" id="srcline8"> 8</a></span><span class="line"><span class="comment">% (prismatic) or local (body) axis of rotation (revolute) of the joint</span></span></span>
+<span class="srcline"><span class="lineno"><a href="28,9" id="srcline9"> 9</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="28,10" id="srcline10">10</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="28,11" id="srcline11">11</a></span><span class="line"><span class="mxinfo " id="T23:U5"><span class="var type1" id="S2T23U11">J_manipulator_spatial</span> = <span class="mxinfo " id="T23:U7">zeros(<span class="mxinfo " id="T8:U8">6</span>,<span class="var type1" id="S3T8U15">num_joints</span>)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="28,12" id="srcline12">12</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="28,13" id="srcline13">13</a></span><span class="line"><span class="keyword">for</span> <span class="var type1" id="S7T8U18">i</span> = <span class="mxinfo " id="T45:U11"><span class="mxinfo " id="T8:U12">1</span>:<span class="var type1" id="S3T8U21">num_joints</span></span></span></span>
+<span class="srcline"><span class="lineno"><a href="28,14" id="srcline14">14</a></span><span class="line">    <span class="mxinfo " id="T44:U14"><span class="var type1" id="S8T44U24">Ad_joints_home</span> = <span class="mxinfo " id="T44:U16"><span class="fcn" id="F58N7:B26">calculateAdjoint</span>(<span class="mxinfo " id="T6:U17"><span class="var type1" id="S4T20U28">g_joints_home</span>(<span class="mxinfo " id="T21:U19">:</span>,<span class="mxinfo " id="T21:U20">:</span>,<span class="var type1" id="S7T8U31">i</span>)</span>)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="28,15" id="srcline15">15</a></span><span class="line">    <span class="mxinfo " id="T1:U22"><span class="mxinfo " id="T1:U23"><span class="var type1" id="S2T23U35">J_manipulator_spatial</span>(<span class="mxinfo " id="T46:U25">:</span>,<span class="var type1" id="S7T8U37">i</span>)</span> = <span class="mxinfo " id="T1:U27"><span class="var type1" id="S8T44U39">Ad_joints_home</span>*<span class="mxinfo " id="T1:U29"><span class="var type1" id="S5T23U41">bodyTwists</span>(<span class="mxinfo " id="T46:U31">:</span>,<span class="var type1" id="S7T8U43">i</span>)</span></span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="28,16" id="srcline16">16</a></span><span class="line"><span class="keyword">end</span></span></span>
+<span class="srcline"><span class="lineno"><a href="28,17" id="srcline17">17</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="28,18" id="srcline18">18</a></span><span class="line"><span class="keyword">end</span></span></span>
+</pre>
+</body>
+</html>

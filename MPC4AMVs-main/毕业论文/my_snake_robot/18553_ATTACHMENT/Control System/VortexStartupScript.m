@@ -1,0 +1,1 @@
+run(fullfile('C:\CM_Labs_v2\Vortex Studio Simulink','VortexSimulinkStartup.m'))

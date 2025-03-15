@@ -1,0 +1,823 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Code Generation Report</title>
+<link rel="stylesheet" type="text/css" href="resources/eml_report.css" />
+<link rel="stylesheet" type="text/css" href="resources/jQuery/ui.resizable.css" />
+<link rel="stylesheet" type="text/css" href="index.css" />
+<style>
+	pre.code{
+		-moz-tab-size: 4; /* For Firefox */
+		-o-tab-size: 4; /* For Opera 10.6-12.1 */
+		tab-size: 4; /* For Chrome */
+	}
+</style>
+<script type="text/javascript" src="resources/jQuery/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="resources/jQuery/jquery-ui-1.7.custom.min.js"></script>
+<script type="text/javascript" src="resources/jQuery/jquery.tablesorter.mod.js"></script>
+<script type="text/javascript" src="resources/jQuery/jquery.hotkeys-0.7.8.js"></script>
+<script type="text/javascript" src="resources/eml_report_interactions.js"></script>
+<script type="text/javascript" src="resources/eml_report_layout.js"></script>
+<script type="text/javascript" src="rtwshrink.js"></script>
+<script type="text/javascript">
+var localizedMessages = {
+    callSelectPrompt: "Select a function call:",
+    callSelectSource: "Calls from this function",
+    callSelectTarget: "Calls to this function",
+    infoForExpression: "Information for the selected expression:",
+    infoForVarType: "Information for the selected variable:",
+    infoForVarConst: "Information for the selected compile-time constant:",
+    infoForVarNone: "This variable does not have information associated with it.",
+    infoForFilter: "Matched {0}/{1} functions, {2}/{3} methods",
+    autoExtrinsicCall: "Only supported within the MATLAB environment."
+};
+var keyBindings = {
+        selectMCodeTab: "Ctrl+m",
+    selectCallStackTab: "Ctrl+k",
+        selectCCodeTab: "Ctrl+c",
+       selectReportTab: "Ctrl+r",
+     selectCenterPanel: "Ctrl+w",
+      selectSummaryTab: "Ctrl+s",
+     selectMessagesTab: "Ctrl+a",
+    selectWatchListTab: "Ctrl+v",
+     selectBuildLogTab: "Ctrl+t",
+    clearAllHighlights: "Esc"
+};
+var functionInfoTable = {
+ MATLABcode1: "simulink_inverseKinematics1_mcode.html",
+ fpath1: "#USMcontrolSystem:1098",
+ lines1: [1, 1, 47],
+ watch1: "simulink_inverseKinematics1_watch.html",
+ title1: "Function: <span class='functionname'><a title='' class='functionlink' href=\"matlab: sfprivate('eml_report_manager', 'openEditorFromChecksum', 'skNpqTpo26ISJEu6PK8iOfE');\">simulink_inverseKinematics</a></span>",
+ tcall1: [  ],
+ scall1: [ [ "From line 20 to calculateGeometricJacobian", "56#srcline1" ], [ "From line 30 to calculateGeometricJacobian", "56#srcline1" ], [ "From line 37 to CLIK_collisionAvoidance", "130#srcline1" ], [ "From line 39 to CLIK_pathFollowing", "661#srcline1" ] ],
+ positions1: [1, 1725],
+ MATLABcode56: "calculateGeometricJacobian56_mcode.html",
+ fpath56: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions/calculateGeometricJacobian.m",
+ lines56: [1, 1, 12],
+ watch56: "calculateGeometricJacobian56_watch.html",
+ title56: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\bjorhho\\Google&nbsp;Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source&nbsp;code\\Control&nbsp;System\\functions\\calculateGeometricJacobian.m' class='functionlink' href=\"matlab: open('C:\\Users\\bjorhho\\Google Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source code\\Control System\\functions\\calculateGeometricJacobian.m')\">calculateGeometricJacobian</a></span>",
+ tcall56: [ [ "From simulink_inverseKinematics line 20", "1#F56N9:B128" ], [ "From simulink_inverseKinematics line 30", "1#F56N9:B195" ] ],
+ scall56: [ [ "From line 4 to calculateManipulatorJacobian", "57#srcline1" ], [ "From line 7 to calculateAdjointInverse", "103#srcline1" ] ],
+ positions56: [1, 383],
+ MATLABcode57: "calculateManipulatorJacobian57_mcode.html",
+ fpath57: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions/calculateManipulatorJacobian.m",
+ lines57: [1, 1, 19],
+ watch57: "calculateManipulatorJacobian57_watch.html",
+ title57: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\bjorhho\\Google&nbsp;Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source&nbsp;code\\Control&nbsp;System\\functions\\calculateManipulatorJacobian.m' class='functionlink' href=\"matlab: open('C:\\Users\\bjorhho\\Google Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source code\\Control System\\functions\\calculateManipulatorJacobian.m')\">calculateManipulatorJacobian</a></span>",
+ tcall57: [ [ "From calculateGeometricJacobian line 4", "56#F57N10:B13" ] ],
+ scall57: [ [ "From line 14 to calculateAdjoint", "58#srcline1" ] ],
+ positions57: [1, 673],
+ MATLABcode58: "calculateAdjoint58_mcode.html",
+ fpath58: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions/calculateAdjoint.m",
+ lines58: [1, 1, 10],
+ watch58: "calculateAdjoint58_watch.html",
+ title58: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\bjorhho\\Google&nbsp;Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source&nbsp;code\\Control&nbsp;System\\functions\\calculateAdjoint.m' class='functionlink' href=\"matlab: open('C:\\Users\\bjorhho\\Google Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source code\\Control System\\functions\\calculateAdjoint.m')\">calculateAdjoint</a></span>",
+ tcall58: [ [ "From calculateManipulatorJacobian line 14", "57#F58N7:B26" ] ],
+ scall58: [ [ "From line 7 to skew", "59#srcline1" ] ],
+ positions58: [1, 152],
+ MATLABcode59: "skew59_mcode.html",
+ fpath59: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/utilities/skew.m",
+ lines59: [1, 1, 7],
+ watch59: "skew59_watch.html",
+ title59: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\bjorhho\\Google&nbsp;Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source&nbsp;code\\Control&nbsp;System\\utilities\\skew.m' class='functionlink' href=\"matlab: open('C:\\Users\\bjorhho\\Google Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source code\\Control System\\utilities\\skew.m')\">skew</a></span>",
+ tcall59: [ [ "From calculateAdjoint line 7", "58#F59N17:B35" ], [ "From calculateAdjointInverse line 6", "103#F59N17:B39" ] ],
+ scall59: [  ],
+ positions59: [1, 94],
+ MATLABcode103: "calculateAdjointInverse103_mcode.html",
+ fpath103: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions/calculateAdjointInverse.m",
+ lines103: [1, 1, 9],
+ watch103: "calculateAdjointInverse103_watch.html",
+ title103: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\bjorhho\\Google&nbsp;Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source&nbsp;code\\Control&nbsp;System\\functions\\calculateAdjointInverse.m' class='functionlink' href=\"matlab: open('C:\\Users\\bjorhho\\Google Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source code\\Control System\\functions\\calculateAdjointInverse.m')\">calculateAdjointInverse</a></span>",
+ tcall103: [ [ "From calculateGeometricJacobian line 7", "56#F103N8:B30" ] ],
+ scall103: [ [ "From line 6 to skew", "59#srcline1" ] ],
+ positions103: [1, 153],
+ MATLABcode130: "CLIK_collisionAvoidance130_mcode.html",
+ fpath130: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions_BHH/CLIK_collisionAvoidance.m",
+ lines130: [1, 1, 81],
+ watch130: "CLIK_collisionAvoidance130_watch.html",
+ title130: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\bjorhho\\Google&nbsp;Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source&nbsp;code\\Control&nbsp;System\\functions_BHH\\CLIK_collisionAvoidance.m' class='functionlink' href=\"matlab: open('C:\\Users\\bjorhho\\Google Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source code\\Control System\\functions_BHH\\CLIK_collisionAvoidance.m')\">CLIK_collisionAvoidance</a></span>",
+ tcall130: [ [ "From simulink_inverseKinematics line 37", "1#F130N2:B223" ] ],
+ scall130: [ [ "From line 2 to tform2trvec", "131#srcline1" ], [ "From line 3 to tform2trvec", "131#srcline1" ], [ "From line 4 to tform2trvec", "131#srcline1" ], [ "From line 6 to tform2rotm", "132#srcline1" ], [ "From line 7 to tform2rotm", "132#srcline1" ], [ "From line 8 to tform2rotm", "132#srcline1" ], [ "From line 26 to NormTask.1/NormTask", "133#srcline16" ], [ "From line 27 to NormTask.1/NormTask", "133#srcline16" ], [ "From line 28 to NormTask.1/NormTask", "133#srcline16" ], [ "From line 30 to NormTask.1/NormTask", "133#srcline16" ], [ "From line 31 to NormTask.1/NormTask", "133#srcline16" ], [ "From line 32 to NormTask.1/NormTask", "133#srcline16" ], [ "From line 56 to NormTask.2/update", "158#srcline33" ], [ "From line 57 to NormTask.2/update", "158#srcline33" ], [ "From line 59 to NormTask.2/update", "158#srcline33" ], [ "From line 62 to NormTask.3/update", "252#srcline33" ], [ "From line 63 to NormTask.2/update", "158#srcline33" ], [ "From line 65 to determineActiveTasks", "296#srcline1" ], [ "From line 66 to multipleTaskCLIK", "297#srcline1" ] ],
+ positions130: [1, 2541],
+ MATLABcode131: "tform2trvec131_mcode.html",
+ fpath131: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/utilities/tform2trvec.m",
+ lines131: [1, 1, 10],
+ watch131: "tform2trvec131_watch.html",
+ title131: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\bjorhho\\Google&nbsp;Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source&nbsp;code\\Control&nbsp;System\\utilities\\tform2trvec.m' class='functionlink' href=\"matlab: open('C:\\Users\\bjorhho\\Google Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source code\\Control System\\utilities\\tform2trvec.m')\">tform2trvec</a></span>",
+ tcall131: [ [ "From CLIK_collisionAvoidance line 2", "130#F131N20:B19" ], [ "From CLIK_collisionAvoidance line 3", "130#F131N20:B25" ], [ "From CLIK_collisionAvoidance line 4", "130#F131N20:B31" ], [ "From CLIK_pathFollowing line 8", "661#F131N20:B25" ], [ "From CLIK_pathFollowing line 32", "661#F131N20:B116" ] ],
+ scall131: [  ],
+ positions131: [1, 136],
+ MATLABcode132: "tform2rotm132_mcode.html",
+ fpath132: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/utilities/tform2rotm.m",
+ lines132: [1, 1, 10],
+ watch132: "tform2rotm132_watch.html",
+ title132: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\bjorhho\\Google&nbsp;Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source&nbsp;code\\Control&nbsp;System\\utilities\\tform2rotm.m' class='functionlink' href=\"matlab: open('C:\\Users\\bjorhho\\Google Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source code\\Control System\\utilities\\tform2rotm.m')\">tform2rotm</a></span>",
+ tcall132: [ [ "From CLIK_collisionAvoidance line 6", "130#F132N19:B37" ], [ "From CLIK_collisionAvoidance line 7", "130#F132N19:B43" ], [ "From CLIK_collisionAvoidance line 8", "130#F132N19:B49" ], [ "From CLIK_pathFollowing line 14", "661#F132N19:B48" ], [ "From CLIK_pathFollowing line 38", "661#F132N19:B139" ] ],
+ scall132: [  ],
+ positions132: [1, 129],
+ MATLABcode133: "NormTask133_mcode.html",
+ fpath133: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions_BHH/NormTask.m",
+ lines133: [16, 16, 33],
+ watch133: "NormTask133_watch.html",
+ title133: "Method: <span class='functionname'><a title='C:&nbsp;\\Users\\bjorhho\\Google&nbsp;Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source&nbsp;code\\Control&nbsp;System\\functions_BHH\\NormTask.m' class='functionlink' href=\"matlab: open('C:\\Users\\bjorhho\\Google Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source code\\Control System\\functions_BHH\\NormTask.m')\">NormTask.1/NormTask</a></span>",
+ tcall133: [ [ "From CLIK_collisionAvoidance line 26", "130#F133N4:B97" ], [ "From CLIK_collisionAvoidance line 27", "130#F133N4:B106" ], [ "From CLIK_collisionAvoidance line 28", "130#F133N4:B115" ], [ "From CLIK_collisionAvoidance line 30", "130#F133N4:B124" ], [ "From CLIK_collisionAvoidance line 31", "130#F133N4:B133" ], [ "From CLIK_collisionAvoidance line 32", "130#F133N4:B142" ] ],
+ scall133: [  ],
+ positions133: [584, 1129],
+ MATLABcode158: "update158_mcode.html",
+ fpath158: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions_BHH/NormTask.m",
+ lines158: [32, 33, 65],
+ watch158: "update158_watch.html",
+ title158: "Method: <span class='functionname'><a title='C:&nbsp;\\Users\\bjorhho\\Google&nbsp;Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source&nbsp;code\\Control&nbsp;System\\functions_BHH\\NormTask.m' class='functionlink' href=\"matlab: open('C:\\Users\\bjorhho\\Google Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source code\\Control System\\functions_BHH\\NormTask.m')\">NormTask.2/update</a></span>",
+ tcall158: [ [ "From CLIK_collisionAvoidance line 56", "130#F158N5:B282" ], [ "From CLIK_collisionAvoidance line 57", "130#F158N5:B294" ], [ "From CLIK_collisionAvoidance line 59", "130#F158N5:B306" ], [ "From CLIK_collisionAvoidance line 63", "130#F158N5:B326" ] ],
+ scall158: [  ],
+ positions158: [1146, 2425],
+ MATLABcode252: "update252_mcode.html",
+ fpath252: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions_BHH/NormTask.m",
+ lines252: [32, 33, 65],
+ watch252: "update252_watch.html",
+ title252: "Method: <span class='functionname'><a title='C:&nbsp;\\Users\\bjorhho\\Google&nbsp;Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source&nbsp;code\\Control&nbsp;System\\functions_BHH\\NormTask.m' class='functionlink' href=\"matlab: open('C:\\Users\\bjorhho\\Google Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source code\\Control System\\functions_BHH\\NormTask.m')\">NormTask.3/update</a></span>",
+ tcall252: [ [ "From CLIK_collisionAvoidance line 62", "130#F252N6:B316" ] ],
+ scall252: [  ],
+ positions252: [1146, 2425],
+ MATLABcode296: "determineActiveTasks296_mcode.html",
+ fpath296: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions_BHH/determineActiveTasks.m",
+ lines296: [1, 1, 13],
+ watch296: "determineActiveTasks296_watch.html",
+ title296: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\bjorhho\\Google&nbsp;Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source&nbsp;code\\Control&nbsp;System\\functions_BHH\\determineActiveTasks.m' class='functionlink' href=\"matlab: open('C:\\Users\\bjorhho\\Google Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source code\\Control System\\functions_BHH\\determineActiveTasks.m')\">determineActiveTasks</a></span>",
+ tcall296: [ [ "From CLIK_collisionAvoidance line 65", "130#F296N12:B343" ] ],
+ scall296: [  ],
+ positions296: [1, 206],
+ MATLABcode297: "multipleTaskCLIK297_mcode.html",
+ fpath297: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions_BHH/multipleTaskCLIK.m",
+ lines297: [1, 1, 35],
+ watch297: "multipleTaskCLIK297_watch.html",
+ title297: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\bjorhho\\Google&nbsp;Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source&nbsp;code\\Control&nbsp;System\\functions_BHH\\multipleTaskCLIK.m' class='functionlink' href=\"matlab: open('C:\\Users\\bjorhho\\Google Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source code\\Control System\\functions_BHH\\multipleTaskCLIK.m')\">multipleTaskCLIK</a></span>",
+ tcall297: [ [ "From CLIK_collisionAvoidance line 66", "130#F297N15:B349" ] ],
+ scall297: [  ],
+ positions297: [1, 837],
+ MATLABcode661: "CLIK_pathFollowing661_mcode.html",
+ fpath661: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions_BHH/CLIK_pathFollowing.m",
+ lines661: [1, 1, 54],
+ watch661: "CLIK_pathFollowing661_watch.html",
+ title661: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\bjorhho\\Google&nbsp;Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source&nbsp;code\\Control&nbsp;System\\functions_BHH\\CLIK_pathFollowing.m' class='functionlink' href=\"matlab: open('C:\\Users\\bjorhho\\Google Drive\\Skole\\NTNU\\Masteroppgave\\Vortex\\Source code\\Control System\\functions_BHH\\CLIK_pathFollowing.m')\">CLIK_pathFollowing</a></span>",
+ tcall661: [ [ "From simulink_inverseKinematics line 39", "1#F661N3:B237" ] ],
+ scall661: [ [ "From line 8 to tform2trvec", "131#srcline1" ], [ "From line 14 to tform2rotm", "132#srcline1" ], [ "From line 32 to tform2trvec", "131#srcline1" ], [ "From line 38 to tform2rotm", "132#srcline1" ] ],
+ positions661: [1, 1424],
+ rootFcnID: "1",
+ firstPage: "1",
+ htmlRoot: "C:/Users/bjorhho/Google%20Drive/Skole/NTNU/Masteroppgave/Vortex/Source%20code/Control%20System/slprj/_sfprj/EMLReport/skNpqTpo26ISJEu6PK8iOfE/"
+};
+var scriptInfoTable = {
+ fpath1: "#USMcontrolSystem:1098",
+ fpath2: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/ops/rdivide.m",
+ fpath3: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/isBuiltInNumeric.m",
+ fpath4: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/scalexpCompatible.m",
+ fpath5: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elmat/isequal.m",
+ fpath6: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elmat/private/eml_isequal_core.m",
+ fpath7: "C:/Program Files/MATLAB/R2017a/toolbox/shared/coder/coder/+coder/+internal/narginchk.m",
+ fpath8: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elfun/floor.m",
+ fpath9: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/applyScalarFunctionInPlace.m",
+ fpath10: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+scalar/floor.m",
+ fpath11: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elmat/isnan.m",
+ fpath12: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/div.m",
+ fpath13: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/ops/eml_mtimes_helper.m",
+ fpath14: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/ops/power.m",
+ fpath15: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/scalarEg.m",
+ fpath16: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/fixedpoint/isnumerictype.m",
+ fpath17: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/fixedpoint/isfimath.m",
+ fpath18: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/eml/eml_int_forloop_overflow_check.m",
+ fpath19: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/fixedpoint/isfi.m",
+ fpath20: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elmat/intmax.m",
+ fpath21: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elmat/intmin.m",
+ fpath22: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/applyScalarFunction.m",
+ fpath23: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/scalexpAlloc.m",
+ fpath24: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/scalexpAllocNoCheck.m",
+ fpath25: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/useParforConst.m",
+ fpath26: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/error.m",
+ fpath27: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions/calculateGeometricJacobian.m",
+ fpath28: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions/calculateManipulatorJacobian.m",
+ fpath29: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions/calculateAdjoint.m",
+ fpath30: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/utilities/skew.m",
+ fpath31: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/xgemm.m",
+ fpath32: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/inline.m",
+ fpath33: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/use_refblas.m",
+ fpath34: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/threshold.m",
+ fpath35: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+refblas/xgemm.m",
+ fpath36: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions/calculateAdjointInverse.m",
+ fpath37: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elmat/fliplr.m",
+ fpath38: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/prodsize.m",
+ fpath39: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elmat/eye.m",
+ fpath40: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/checkAndSaturateExpandSize.m",
+ fpath41: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/sparfun/issparse.m",
+ fpath42: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions_BHH/CLIK_collisionAvoidance.m",
+ fpath43: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/utilities/tform2trvec.m",
+ fpath44: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/utilities/tform2rotm.m",
+ fpath45: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions_BHH/NormTask.m",
+ fpath46: "C:/Program Files/MATLAB/R2017a/toolbox/coder/coder/+coder/+internal/matlabCodegenHandle.p",
+ fpath47: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/matfun/norm.m",
+ fpath48: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/xnrm2.m",
+ fpath49: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+refblas/xnrm2.m",
+ fpath50: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elmat/realmin.m",
+ fpath51: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elmat/private/eml_realmin.m",
+ fpath52: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/floatModel.m",
+ fpath53: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/indexMinus.m",
+ fpath54: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/indexTimes.m",
+ fpath55: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/indexPlus.m",
+ fpath56: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elfun/abs.m",
+ fpath57: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+scalar/abs.m",
+ fpath58: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/ops/mrdivide.p",
+ fpath59: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elmat/diag.m",
+ fpath60: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elmat/ismatrix.m",
+ fpath61: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/xdotu.m",
+ fpath62: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/xdot.m",
+ fpath63: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+refblas/xdot.m",
+ fpath64: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+refblas/xdotx.m",
+ fpath65: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elfun/sqrt.m",
+ fpath66: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/isDomainError.m",
+ fpath67: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+scalar/sqrt.m",
+ fpath68: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions_BHH/determineActiveTasks.m",
+ fpath69: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions_BHH/multipleTaskCLIK.m",
+ fpath70: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/cat.m",
+ fpath71: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/datafun/max.m",
+ fpath72: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/minOrMax.m",
+ fpath73: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/int.m",
+ fpath74: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/BLASApi.m",
+ fpath75: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/size_ptr.m",
+ fpath76: "C:/Program Files/MATLAB/R2017a/toolbox/coder/coder/+coder/+internal/c_cast.p",
+ fpath77: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/lusolve.m",
+ fpath78: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+lapack/xgetrf.m",
+ fpath79: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+lapack/use_lapack.m",
+ fpath80: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+lapack/threshold.m",
+ fpath81: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+lapack/LAPACKApi.m",
+ fpath82: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+lapack/info_t.m",
+ fpath83: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+lapack/int.m",
+ fpath84: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/datafun/min.m",
+ fpath85: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/relop.m",
+ fpath86: "C:/Program Files/MATLAB/R2017a/toolbox/shared/coder/coder/+coder/+internal/indexIntRelop.m",
+ fpath87: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elmat/repmat.m",
+ fpath88: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/assertValidSizeArg.m",
+ fpath89: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/isIntegerClass.m",
+ fpath90: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elmat/isinf.m",
+ fpath91: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+lapack/majority.m",
+ fpath92: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+lapack/infocheck.m",
+ fpath93: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/hasRuntimeErrors.m",
+ fpath94: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/nan.m",
+ fpath95: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+reflapack/xzgetrf.m",
+ fpath96: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elmat/eps.m",
+ fpath97: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/isFloatClass.m",
+ fpath98: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/elmat/private/eml_eps.m",
+ fpath99: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/ops/colon.m",
+ fpath100: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/isaUint.m",
+ fpath101: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/unsignedClass.m",
+ fpath102: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/ixamax.m",
+ fpath103: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+refblas/ixamax.m",
+ fpath104: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+refblas/xcabs1.m",
+ fpath105: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/xswap.m",
+ fpath106: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+refblas/xswap.m",
+ fpath107: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/isNullEmpty.m",
+ fpath108: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/xgeru.m",
+ fpath109: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/xger.m",
+ fpath110: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+refblas/xger.m",
+ fpath111: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+refblas/xgerx.m",
+ fpath112: "C:/Program Files/MATLAB/R2017a/toolbox/shared/coder/coder/+coder/+internal/warning.m",
+ fpath113: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/xtrsm.m",
+ fpath114: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+refblas/xtrsm.m",
+ fpath115: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/recip.m",
+ fpath116: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/qrsolve.m",
+ fpath117: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+lapack/xgeqp3.m",
+ fpath118: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+reflapack/xzgeqp3.m",
+ fpath119: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+reflapack/xzlarfg.m",
+ fpath120: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/xdlapy2.m",
+ fpath121: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/xscal.m",
+ fpath122: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+refblas/xscal.m",
+ fpath123: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+reflapack/xzlarf.m",
+ fpath124: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/xgemv.m",
+ fpath125: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+refblas/xgemv.m",
+ fpath126: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/conjtimes.m",
+ fpath127: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+blas/xgerc.m",
+ fpath128: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/flt2str.m",
+ fpath129: "C:/Program Files/MATLAB/R2017a/toolbox/eml/lib/matlab/strfun/char.m",
+ fpath130: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/charCastCheck.m",
+ fpath131: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+lapack/xunormqr.m",
+ fpath132: "C:/Program Files/MATLAB/R2017a/toolbox/eml/eml/+coder/+internal/+reflapack/xzunormqr.m",
+ fpath133: "C:/Users/bjorhho/Google Drive/Skole/NTNU/Masteroppgave/Vortex/Source code/Control System/functions_BHH/CLIK_pathFollowing.m"
+};
+</script>
+<script type="text/javascript" src="resources/range_highlighter.js"></script></head>
+<body>
+
+<div class="west">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="MATLABcode"><span>MATLAB code</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="callstack"><span>Call stack</span></span></li>
+</ul>
+<div id="MATLABcodebody" class="ui-tabs-panel">
+<!-- Begin Filter -->
+<div class="grayline methodset" onclick="filterClick(event);">
+<a class="collapsed">Filter</a>
+</div>
+<div id="filterbody" class="hidden">
+<table class="myfunc-filter-tbl">
+<tr>
+<td title="Use this filter to display only functions and methods that contain variables or expressions with the specified attributes." colspan="2" class="checkbox">
+<div class="myfunc-filterby-chk"><input type="checkbox" class="filterenable" />
+<div class="filter-enable-lbl">Filter functions and methods</div></div></td></tr><tr>
+<td class="label"><div class="myfunc-filterby-lbl">Filter by:</div></td>
+<td class="select">
+<div class="filters">
+<select class="myfunc-filterby">
+<option id="size">Size</option>
+<option id="complex">Complexity</option>
+<option id="class">Class</option>
+</select>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="label"><div class="myfunc-filterstr-lbl">Filter:</div></td>
+<td class="input"><div>
+
+<div class="size">
+<select class="myfunc-filter size">
+<option value="1 56 57 130 133 158 252 296 297">1 x 1</option>
+<option value="130 133 158 252 296 297">1 x 10</option>
+<option value="1 130 296 297 661">1 x 3</option>
+<option value="130 252">1 x 4</option>
+<option value="1">1 x 7</option>
+<option value="130 158 296 297 661">10 x 1</option>
+<option value="158 252 297">10 x 10</option>
+<option value="661">10 x 3</option>
+<option value="1 58 59 103 130 131 158 252 661">3 x 1</option>
+<option value="130 158 661">3 x 10</option>
+<option value="1 58 59 103 130 132 158 252 661">3 x 3</option>
+<option value="130 252">3 x 4</option>
+<option value="130 252">4 x 1</option>
+<option value="1 56 58 103 130 131 132 661">4 x 4</option>
+<option value="1">4 x 4 x 10</option>
+<option value="1 56 57">4 x 4 x 5</option>
+<option value="1">400 x 2</option>
+<option value="1 130">6 x 1</option>
+<option value="1 56 130 661">6 x 10</option>
+<option value="1 56 57">6 x 4</option>
+<option value="56 57 58 103">6 x 6</option>
+<option value="1">6 x 8</option>
+<option value="1">7 x 1</option>
+<option value="1">7 x 3</option>
+<option value="1 130 661">8 x 1</option>
+<option value="1">9 x 1</option>
+<option value="1">9 x 3</option>
+<option value="1">9 x 6</option>
+<option value="130"><b>:</b>? x 1</option>
+<option value="297"><b>:</b>? x <b>:</b>?</option>
+</select>
+</div>
+
+<div class="complex">
+<select class="myfunc-filter complex">
+<option value="">Complex values</option>
+<option value="1 56 57 58 59 103 130 131 132 133 158 252 296 297 661">Real values</option>
+</select>
+</div>
+<!-- Begin Class Filter -->
+<div class="class">
+<select class="myfunc-filter class">
+<option value="130 133 158 252 296 297">NormTask</option>
+<option value="130 296 297">cell</option>
+<option value="1">char</option>
+<option value="1 56 57 58 59 103 130 131 132 133 158 252 296 297 661">double</option>
+<option value="130 133 158 252 296 297">logical</option>
+<option value="1">struct</option>
+</select>
+</div>
+<!-- End Class Filter -->
+</div>
+</td>
+</tr>
+</table>
+<div class="myfunc-count"></div>
+</div>
+<!-- End Filter -->
+<div class="grayline methodset" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionSetClick(event);">
+<a class="expanded">Functions</a>
+</div>
+<!-- Begin Function Tree -->
+<div id="functiontreebody">
+<div class="functionwrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionTreeClick(event);">
+<ol class="tree">
+<!-- Begin Function Tree Roots -->
+<li class="leaf  passed"><a href="#" class="fcn  " id="F130N2:F1">CLIK_collisionAvoidance</a></li>
+<li class="leaf  passed"><a href="#" class="fcn  " id="F661N3:F2">CLIK_pathFollowing</a></li>
+<li class="leaf  passed"><a href="#" class="fcn  " id="F58N7:F3">calculateAdjoint</a></li>
+<li class="leaf  passed"><a href="#" class="fcn  " id="F103N8:F4">calculateAdjointInverse</a></li>
+<li class="leaf  passed"><a href="#" class="fcn  " id="F56N9:F5">calculateGeometricJacobian</a></li>
+<li class="leaf  passed"><a href="#" class="fcn  " id="F57N10:F6">calculateManipulatorJacobian</a></li>
+<li class="leaf  passed"><a href="#" class="fcn  " id="F296N12:F7">determineActiveTasks</a></li>
+<li class="leaf  passed"><a href="#" class="fcn  " id="F297N15:F8">multipleTaskCLIK</a></li>
+<li class="leaf  failed"><a href="#" class="fcn  PD1 " id="F1N16:F9">simulink_inverseKinematics</a></li>
+<li class="leaf  passed"><a href="#" class="fcn  " id="F59N17:F10">skew</a></li>
+<li class="leaf  passed"><a href="#" class="fcn  " id="F132N19:F11">tform2rotm</a></li>
+<li class="leaf  passed"><a href="#" class="fcn  " id="F131N20:F12">tform2trvec</a></li>
+<!-- End Function Tree Roots -->
+</ol>
+<!-- Function Tree Nodes -->
+<div class="functiontreenodes hidden">
+</div>
+<!-- End Function Tree Nodes -->
+</div>
+</div>
+<!-- End Function Tree -->
+<!-- Begin Class Tree -->
+<div class="grayline methodset" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="methodSetClick(event);">
+<a class="expanded">Classes</a>
+</div>
+<div id="classlistbody">
+<div class="classwrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="classTreeClick(event);">
+<ol class="tree">
+<!-- Begin Class Tree Roots -->
+<li class="node collapsed passed"><a class="classroot" title="NormTask">NormTask</a>
+<ul>
+<li class="node collapsed passed"><a class="classroot" id="F133N4:M4" title="NormTask">NormTask.1</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F158N5:M5" title="NormTask">NormTask.2</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F252N6:M6" title="NormTask">NormTask.3</a></li>
+</ul>
+</li>
+<!-- End Class Tree Roots -->
+</ol>
+<!-- Class Tree Nodes -->
+<div class="classlistnodes hidden">
+<ol class="callstacknode" id="callstacknode133">
+<li class="node collapsed"><a>NormTask.1</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn  " id="F133N4:m1" title="NormTask.1/NormTask">NormTask</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode158">
+<li class="node collapsed"><a>NormTask.2</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn  " id="F158N5:m2" title="NormTask.2/update">update</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode252">
+<li class="node collapsed"><a>NormTask.3</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn  " id="F252N6:m3" title="NormTask.3/update">update</a></li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<!-- End Class Tree -->
+</div>
+<!-- Begin Call Tree -->
+<div id="callstackbody" class="ui-tabs-panel hidden">
+<div class="treewrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="callTreeClick(event);">
+<ol class="tree">
+<!-- Call Tree Root -->
+<li class="node collapsed failed"><a href="#" class="fcn  PD1 " id="F1N16:L1">simulink_inverseKinematics</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn  " id="F56N9:L2">calculateGeometricJacobian</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn  " id="F130N2:L3">CLIK_collisionAvoidance</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn  " id="F661N3:L4">CLIK_pathFollowing</a></li>
+</ul>
+</li>
+</ol>
+<!-- Call Tree Nodes -->
+<div class="callstacknodes hidden">
+<ol class="callstacknode" id="callstacknode1">
+
+<li class="node collapsed failed"><a href="#" class="fcn  PD1 " id="F1N16:l1">simulink_inverseKinematics</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn  " id="F56N9:l2">calculateGeometricJacobian</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn  " id="F130N2:l3">CLIK_collisionAvoidance</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn  " id="F661N3:l4">CLIK_pathFollowing</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode56">
+
+<li class="node collapsed passed"><a href="#" class="fcn  " id="F56N9:l5">calculateGeometricJacobian</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn  " id="F57N10:l6">calculateManipulatorJacobian</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn  " id="F103N8:l7">calculateAdjointInverse</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode57">
+
+<li class="node collapsed passed"><a href="#" class="fcn  " id="F57N10:l8">calculateManipulatorJacobian</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn  " id="F58N7:l9">calculateAdjoint</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode58">
+
+<li class="node collapsed passed"><a href="#" class="fcn  " id="F58N7:l10">calculateAdjoint</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn  " id="F59N17:l11">skew</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode59">
+
+<li class="leaf passed"><a href="#" class="fcn  " id="F59N17:l12">skew</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode103">
+
+<li class="node collapsed passed"><a href="#" class="fcn  " id="F103N8:l13">calculateAdjointInverse</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn  " id="F59N17:l14">skew</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode130">
+
+<li class="node collapsed passed"><a href="#" class="fcn  " id="F130N2:l15">CLIK_collisionAvoidance</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn  " id="F131N20:l16">tform2trvec</a></li>
+<li class="leaf passed"><a href="#" class="fcn  " id="F132N19:l17">tform2rotm</a></li>
+<li class="leaf passed"><a href="#" class="fcn  " id="F133N4:l18" title="NormTask.1/NormTask">NormTask.1/NormTask</a></li>
+<li class="leaf passed"><a href="#" class="fcn  " id="F158N5:l19" title="NormTask.2/update">NormTask.2/update</a></li>
+<li class="leaf passed"><a href="#" class="fcn  " id="F252N6:l20" title="NormTask.3/update">NormTask.3/update</a></li>
+<li class="leaf passed"><a href="#" class="fcn  " id="F296N12:l21">determineActiveTasks</a></li>
+<li class="leaf passed"><a href="#" class="fcn  " id="F297N15:l22">multipleTaskCLIK</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode131">
+
+<li class="leaf passed"><a href="#" class="fcn  " id="F131N20:l23">tform2trvec</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode132">
+
+<li class="leaf passed"><a href="#" class="fcn  " id="F132N19:l24">tform2rotm</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode133">
+
+<li class="leaf passed"><a href="#" class="fcn  " id="F133N4:l25" title="NormTask.1/NormTask">NormTask.1/NormTask</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode158">
+
+<li class="leaf passed"><a href="#" class="fcn  " id="F158N5:l26" title="NormTask.2/update">NormTask.2/update</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode252">
+
+<li class="leaf passed"><a href="#" class="fcn  " id="F252N6:l27" title="NormTask.3/update">NormTask.3/update</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode296">
+
+<li class="leaf passed"><a href="#" class="fcn  " id="F296N12:l28">determineActiveTasks</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode297">
+
+<li class="leaf passed"><a href="#" class="fcn  " id="F297N15:l29">multipleTaskCLIK</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode661">
+
+<li class="node collapsed passed"><a href="#" class="fcn  " id="F661N3:l30">CLIK_pathFollowing</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn  " id="F131N20:l31">tform2trvec</a></li>
+<li class="leaf passed"><a href="#" class="fcn  " id="F132N19:l32">tform2rotm</a></li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<!-- End Call Tree -->
+</div>
+<!-- Tooltips -->
+<div class="aux hidden">
+<div class="tooltips">
+<div class="tooltip" id="TT1"><table class="tooltip"><tr><th>Size</th><td>6 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT2"><table class="tooltip"><tr><th>Size</th><td>8 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT3"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT4"><table class="tooltip"><tr><th>Size</th><td>3 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT5"><table class="tooltip"><tr><th>Size</th><td>4 x 4 x 10</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT6"><table class="tooltip"><tr><th>Size</th><td>4 x 4</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT7"><table class="tooltip"><tr><th>Size</th><td>3 x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT8"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT9"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>struct</td></tr></table></div>
+<div class="tooltip" id="TT10"><table class="tooltip"><tr><th>Size</th><td>9 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT11"><table class="tooltip"><tr><th>Size</th><td>9 x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT12"><table class="tooltip"><tr><th>Size</th><td>8 x 1</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT13"><table class="tooltip"><tr><th>Size</th><td>6 x 8</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT14"><table class="tooltip"><tr><th>Size</th><td>9 x 6</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT15"><table class="tooltip"><tr><th>Size</th><td>7 x 1</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT16"><table class="tooltip"><tr><th>Size</th><td>1 x 7</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT17"><table class="tooltip"><tr><th>Size</th><td>7 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT18"><table class="tooltip"><tr><th>Size</th><td>400 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT19"><table class="tooltip"><tr><th>Size</th><td>7 x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT20"><table class="tooltip"><tr><th>Size</th><td>4 x 4 x 5</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT21"><table class="tooltip"><tr><th>Size</th><td>4 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT22"><table class="tooltip"><tr><th>Size</th><td>5 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT23"><table class="tooltip"><tr><th>Size</th><td>6 x 4</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT24"><table class="tooltip"><tr><th>Size</th><td>6 x 10</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT25"><table class="tooltip"><tr><th>Size</th><td>5 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT26"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT27"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT28"><table class="tooltip"><tr><th>Size</th><td>1 x 7</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT29"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT30"><table class="tooltip"><tr><th>Size</th><td>1 x 5</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT31"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT32"><table class="tooltip"><tr><th>Size</th><td>1 x 0</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT33"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT34"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT35"><table class="tooltip"><tr><th>Size</th><td>1 x 23</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT36"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT37"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT38"><table class="tooltip"><tr><th>Size</th><td>1 x 14</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT39"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT40"><table class="tooltip"><tr><th>Size</th><td>8 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT41"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT42"><table class="tooltip"><tr><th>Size</th><td>1 x 31</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT43"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>mxArray</td></tr></table></div>
+<div class="tooltip" id="TT44"><table class="tooltip"><tr><th>Size</th><td>6 x 6</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT45"><table class="tooltip"><tr><th>Size</th><td>4 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT46"><table class="tooltip"><tr><th>Size</th><td>6 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT47"><table class="tooltip"><tr><th>Size</th><td>3 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT48"><table class="tooltip"><tr><th>Size</th><td>3 x 6</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT49"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT50"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT51"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>NormTask</td></tr></table></div>
+<div class="tooltip" id="TT52"><table class="tooltip"><tr><th>Size</th><td>1 x 10</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT53"><table class="tooltip"><tr><th>Size</th><td>10 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT54"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>NormTask</td></tr></table></div>
+<div class="tooltip" id="TT55"><table class="tooltip"><tr><th>Size</th><td>1 x 4</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT56"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>NormTask</td></tr></table></div>
+<div class="tooltip" id="TT57"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>NormTask</td></tr></table></div>
+<div class="tooltip" id="TT58"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT59"><table class="tooltip"><tr><th>Size</th><td>3 x 10</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT60"><table class="tooltip"><tr><th>Size</th><td>10 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT61"><table class="tooltip"><tr><th>Size</th><td>3 x 4</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT62"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT63"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT64"><table class="tooltip"><tr><th>Size</th><td>1 x 4</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT65"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>NormTask</td></tr></table></div>
+<div class="tooltip" id="TT66"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>int32</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT67"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT68"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT69"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>NormTask</td></tr></table></div>
+<div class="tooltip" id="TT70"><table class="tooltip"><tr><th>Size</th><td>10 x 10</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT71"><table class="tooltip"><tr><th>Size</th><td>1 x 4</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT72"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT73"><table class="tooltip"><tr><th>Size</th><td>1 x 30</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT74"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT75"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>NormTask</td></tr></table></div>
+<div class="tooltip" id="TT76"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT77"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>NormTask</td></tr></table></div>
+<div class="tooltip" id="TT78"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT79"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>NormTask</td></tr></table></div>
+<div class="tooltip" id="TT80"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT81"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 10</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT82"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT83"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT84"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT85"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT86"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT87"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT88"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT89"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT90"><table class="tooltip"><tr><th>Size</th><td>1 x 39</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT91"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT92"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>unknown</td></tr></table></div>
+<div class="tooltip" id="TT93"><table class="tooltip"><tr><th>Size</th><td>1 x 45</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT94"><table class="tooltip"><tr><th>Size</th><td>1 x 21</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT95"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT96"><table class="tooltip"><tr><th>Size</th><td>1 x 27</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT97"><table class="tooltip"><tr><th>Size</th><td>1 x 34</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT98"><table class="tooltip"><tr><th>Size</th><td>1 x 12</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT99"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.opaque</td></tr></table></div>
+<div class="tooltip" id="TT100"><table class="tooltip"><tr><th>Size</th><td>1 x 9</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT101"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT102"><table class="tooltip"><tr><th>Size</th><td>1 x 0</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT103"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 1</td></tr><tr><th>Class</th><td>coder.opaque</td></tr></table></div>
+<div class="tooltip" id="TT104"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.opaque</td></tr></table></div>
+<div class="tooltip" id="TT105"><table class="tooltip"><tr><th>Size</th><td>1 x 19</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT106"><table class="tooltip"><tr><th>Size</th><td>0 x 0</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT107"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT108"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>uint8</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT109"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT110"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT111"><table class="tooltip"><tr><th>Size</th><td>1 x 15</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT112"><table class="tooltip"><tr><th>Size</th><td>1 x 28</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT113"><table class="tooltip"><tr><th>Size</th><td>1 x 8</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT114"><table class="tooltip"><tr><th>Size</th><td>1 x 33</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT115"><table class="tooltip"><tr><th>Size</th><td>0 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT116"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>coder.opaque</td></tr></table></div>
+<div class="tooltip" id="TT117"><table class="tooltip"><tr><th>Size</th><td>1 x 16</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT118"><table class="tooltip"><tr><th>Size</th><td>1 x 14</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT119"><table class="tooltip"><tr><th>Size</th><td>14 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT120"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT121"><table class="tooltip"><tr><th>Size</th><td>14 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT122"><table class="tooltip"><tr><th>Size</th><td>1 x 44</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT123"><table class="tooltip"><tr><th>Size</th><td>1 x 32</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT124"><table class="tooltip"><tr><th>Size</th><td>10 x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="V1"><table class="tooltip"><tr><th>Value</th><td>               num_joints: 8</br>              num_modules: 9</br>            num_thrusters: 7</br>               accel_grav: 9.8100</br>            density_water: 1026</br>                  lengths: [9×1 double]</br>                 joint_tr: [9×3 double]</br>                   radius: [9×1 double]</br>                   volume: [9×1 double]</br>               volume_tot: 0.0813</br>          buoyancy_vector: [9×1 double]</br>                     mass: [9×1 double]</br>                 mass_tot: 83.4138</br>                 joint_ax: [8×1 char]</br>               bodyTwists: [6×8 double]</br>                        i: 9</br>                    q_min: [8×1 double]</br>                    q_max: [8×1 double]</br>                module_cb: [9×3 double]</br>                module_cm: [9×3 double]</br>          momentOfInertia: [9×3 double]</br>                addedMass: [9×6 double]</br>              thruster_ax: [7×1 char]</br>    thruster_moduleNumber: [3 3 5 5 5 7 7]</br>                f_thr_max: [7×1 double]</br>       thrusterRPMMapping: [400×2 double]</br>             thruster_pos: [7×3 double]</br></td></tr></table></div>
+<div class="tooltip" id="V2"><table class="tooltip"><tr><th>Value</th><td>     4</br></td></tr></table></div>
+<div class="tooltip" id="V3"><table class="tooltip"><tr><th>Value</th><td>[6x10 double]</td></tr></table></div>
+<div class="tooltip" id="V4"><table class="tooltip"><tr><th>Value</th><td>    10</br></td></tr></table></div>
+</div>
+</div>
+<!-- End Tooltips -->
+
+<div class="south">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item"><span class="tab-link" id="summary"><span>Summary</span></span></li>
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="messages"><span>All Messages (1)</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="watchlist"><span>Variables</span></span></li>
+<li class="ui-tabs-nav-item hidden"><span class="tab-link" id="watchload"><span>Variables</span></span></li>
+</ul>
+
+<!-- Compilation Summary -->
+<div id="summarybody" class="ui-tabs-panel hidden">
+<table cellpadding="1" cellspacing="4">
+<tr><td>MATLAB code generation attempted on:</td><td>04-Jun-2018 14:16:02</td></tr>
+<tr><td>Number of errors:</td><td><a href="javascript:selectMessagesTab();">1</a></td></tr>
+<tr><td>Number of warnings:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+<tr><td>Number of notices:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+</table>
+<p/><p/><table>
+<tr><td><b>Tell Us What You Think</b></td></tr>
+<tr><td>We value your feedback. Please take a few minutes to answer this short questionnaire regarding the Code Generation Report.</td></tr>
+<tr><td><a href="matlab: emlcprivate('launchReportSurvey');">&gt;&gt;Provide Feedback</a></td></tr>
+</table>
+</div>
+
+<!-- Message Table -->
+<div id="messagesbody" class="ui-tabs-panel">
+<table class="grid" summary="This table lists the messages produced during code generation." cellspacing="0" cellpadding="6">
+<thead>
+<tr>
+<th id="msgorder" scope="col"><div class="d1"><div class="d2"><a href="#">Order</a></div></div></th>
+<th id="msgtype" scope="col"><div class="d1"><div class="d2"><a href="#">Type</a></div></div></th>
+<th id="function" scope="col"><div class="d1"><div class="d2"><a href="#">Function</a></div></div></th>
+<th id="location" scope="col"><div class="d1"><div class="d2"><a href="#">Line</a></div></div></th>
+<th id="text" scope="col"><div class="d1"><div class="d2"><a href="#">Description</a></div></div></th>
+</tr>
+</thead>
+<tbody onmouseover="messagesMouseOver(event);" onmouseout="messagesMouseOut(event);" onclick="messagesClick(event);">
+<tr class="message error" id="M1F1">
+<td class="msgorder" headers="msgorder"><a href="#">1</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>simulink_inverseKinematics</div></td>
+<td class="location" headers="location"><div>41</div></td>
+<td class="text" headers="text"><div>Size mismatch (size [1 x 3] ~= size [1 x 1]).<br/>The size to the left is the size of the left-hand side of the assignment.</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Watchlist Table -->
+<div id="watchlistbody" class="ui-tabs-panel hidden">
+</div>
+<div id="watchloadbody" class="ui-tabs-panel hidden">
+Loading Variables table ...
+</div>
+
+
+<!-- Potential Differences -->
+<div id="potentialDifferencesBody" class="ui-tabs-panel hidden">
+</div>
+
+</div>
+<!-- Begin MATLAB Code Panel -->
+<div class="center">
+<div class="center-title">
+<div class="ui-tabs-nav-item ui-tabs-selected">
+<span class="functiontitle">
+</span>
+<!-- Begin Call Sites -->
+<span id="callsiteselecttable" class="call-sites-tbl">
+<span id="callsiteselectlabel" class="filtered">Calls:</span>
+<select id="callsiteselect" onchange="callSiteChange(event)">
+<option value="callsiteprompt">Select a function call:</option>
+</select>
+</span>
+<!-- End Call Sites -->
+</div>
+</div>
+<div class="ui-tabs-panel">
+<iframe id="hiddenCodeFrame"></iframe>
+<div class="code" onmouseover="mcodeMouseOver(event);" onmouseout="mcodeMouseOut(event);"onclick="mcodeClick(event);">
+</div>
+</div>
+</div>
+<!-- End MATLAB Code Panel -->
+</body>
+</html>

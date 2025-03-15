@@ -1,0 +1,5 @@
+figure, plot(1:10)
+title('你好，世界！', 'FontName', '微软雅黑', 'FontSize', 14)
+xlabel('时间t', 'FontName', '微软雅黑')
+ylabel('幅值A', 'FontName', '微软雅黑')
+legend('曲线', 'FontName', '微软雅黑')

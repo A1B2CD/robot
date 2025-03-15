@@ -1,0 +1,21 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<body>
+<script src="resources/eml_report_loadable_data.js"></script>
+<pre class="code">
+<span class="srcline"><span class="lineno"><a href="152,1" id="srcline1"> 1</a></span><span class="line"><span class="keyword">function</span> <span class="var type1" id="S2T16U3">eta_ee_des</span> = fcn(<span class="var type1" id="S3T16U6">eta_ee_tilde</span>,<span class="var type1" id="S4T16U7">eta_ee_tilde_int</span>, <span class="var type1" id="S5T16U8">v_tilde</span>,<span class="var type1" id="S6T12U9">K_SI</span>, <span class="var type1" id="S7T12U10">K_DI</span>, <span class="var type1" id="S8T12U11">K_II</span>)</span></span>
+<span class="srcline"><span class="lineno"><a href="152,2" id="srcline2"> 2</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="152,3" id="srcline3"> 3</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="152,4" id="srcline4"> 4</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="152,5" id="srcline5"> 5</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="152,6" id="srcline6"> 6</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="152,7" id="srcline7"> 7</a></span><span class="line"><span class="mxinfo " id="T16:U8"><span class="var type1" id="S9T16U14">eta_ee_force</span>=<span class="mxinfo " id="T16:U10"><span class="mxinfo " id="T16:U11"><span class="mxinfo " id="T16:U12"><span class="var type1" id="S6T12U18">K_SI</span>*<span class="var type1" id="S3T16U19">eta_ee_tilde</span></span>+<span class="mxinfo " id="T16:U15"><span class="var type1" id="S7T12U21">K_DI</span>*<span class="var type1" id="S5T16U22">v_tilde</span></span></span>+<span class="mxinfo " id="T16:U18"><span class="var type1" id="S8T12U24">K_II</span>*<span class="var type1" id="S4T16U25">eta_ee_tilde_int</span></span></span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="152,8" id="srcline8"> 8</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="152,9" id="srcline9"> 9</a></span><span class="line"><span class="comment">%if grip==1</span></span></span>
+<span class="srcline"><span class="lineno"><a href="152,10" id="srcline10">10</a></span><span class="line">    <span class="mxinfo " id="T16:U21"><span class="var type1" id="S2T16U28">eta_ee_des</span>=<span class="var type1" id="S9T16U29">eta_ee_force</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="152,11" id="srcline11">11</a></span><span class="line"><span class="comment">% else</span></span></span>
+<span class="srcline"><span class="lineno"><a href="152,12" id="srcline12">12</a></span><span class="line"><span class="comment">%     eta_ee_des=eta_ee_noforce;</span></span></span>
+<span class="srcline"><span class="lineno"><a href="152,13" id="srcline13">13</a></span><span class="line"><span class="comment">% end</span></span></span>
+</pre>
+</body>
+</html>

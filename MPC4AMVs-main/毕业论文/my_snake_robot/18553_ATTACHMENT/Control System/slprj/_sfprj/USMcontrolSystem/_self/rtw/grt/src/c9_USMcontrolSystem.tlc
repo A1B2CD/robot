@@ -1,0 +1,68 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   7 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "gobj_2"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "gobj_1"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "gobj_0"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "tasks"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "C:\Users\bjorhho\Google Drive\Skole\NTNU\Masteroppgave\Vortex\Collision Avoidance\functions_BHH\CLIK_collisionAvoidance.m:609-614"\
+      Dimensions   [1,3]\
+    }\
+    ChartData {\
+      Name         "tasks_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "C:\Users\bjorhho\Google Drive\Skole\NTNU\Masteroppgave\Vortex\Collision Avoidance\functions_BHH\CLIK_collisionAvoidance.m:609-614"\
+    }\
+    ChartData {\
+      Name         "CA_r"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "C:\Users\bjorhho\Google Drive\Skole\NTNU\Masteroppgave\Vortex\Collision Avoidance\functions_BHH\CLIK_collisionAvoidance.m:627-631"\
+    }\
+    ChartData {\
+      Name         "Position_r"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "C:\Users\bjorhho\Google Drive\Skole\NTNU\Masteroppgave\Vortex\Collision Avoidance\functions_BHH\CLIK_collisionAvoidance.m:644-654"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

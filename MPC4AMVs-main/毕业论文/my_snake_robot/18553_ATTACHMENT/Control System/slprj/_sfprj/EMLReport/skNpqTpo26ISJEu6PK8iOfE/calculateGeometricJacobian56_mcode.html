@@ -1,0 +1,19 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<body>
+<script src="resources/eml_report_loadable_data.js"></script>
+<pre class="code">
+<span class="srcline"><span class="lineno"><a href="27,1" id="srcline1"> 1</a></span><span class="line"><span class="keyword">function</span> <span class="var type1" id="S2T24U3">J_geometric_body</span> = calculateGeometricJacobian(<span class="var type1" id="S3T20U6">g_joints_home</span>, <span class="var type2" id="S4T8V2U7">num_joints</span>, <span class="var type1" id="S5T23U8">bodyTwists</span>)</span></span>
+<span class="srcline"><span class="lineno"><a href="27,2" id="srcline2"> 2</a></span><span class="line"><span class="comment">%#codegen</span></span></span>
+<span class="srcline"><span class="lineno"><a href="27,3" id="srcline3"> 3</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="27,4" id="srcline4"> 4</a></span><span class="line"><span class="mxinfo " id="T23:U5"><span class="var type1" id="S6T23U11">J_manipulator</span> = <span class="mxinfo " id="T23:U7"><span class="fcn" id="F57N10:B13">calculateManipulatorJacobian</span>(<span class="var type1" id="S4T8U14">num_joints</span>,<span class="var type1" id="S3T20U15">g_joints_home</span>,<span class="var type1" id="S5T23U16">bodyTwists</span>)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="27,5" id="srcline5"> 5</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="27,6" id="srcline6"> 6</a></span><span class="line"><span class="mxinfo " id="T6:U11"><span class="var type1" id="S8T6U19">g_be</span> = <span class="mxinfo " id="T6:U13"><span class="var type1" id="S3T20U21">g_joints_home</span>(<span class="mxinfo " id="T21:U15">:</span>,<span class="mxinfo " id="T21:U16">:</span>,<span class="mxinfo " id="T34:U17">end</span>)</span></span>;  <span class="comment">% Transformation from base frame to end-effector frame</span></span></span>
+<span class="srcline"><span class="lineno"><a href="27,7" id="srcline7"> 7</a></span><span class="line"><span class="mxinfo " id="T44:U18"><span class="var type1" id="S10T44U28">Ad_be_inv</span> = <span class="mxinfo " id="T44:U20"><span class="fcn" id="F103N8:B30">calculateAdjointInverse</span>(<span class="var type1" id="S8T6U31">g_be</span>)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="27,8" id="srcline8"> 8</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="27,9" id="srcline9"> 9</a></span><span class="line"><span class="mxinfo " id="T24:U22"><span class="var type1" id="S2T24U34">J_geometric_body</span> = <span class="mxinfo " id="T24:U24">[<span class="var type1" id="S10T44U37">Ad_be_inv</span>, <span class="mxinfo " id="T23:U26"><span class="var type1" id="S10T44U39">Ad_be_inv</span> * <span class="var type1" id="S6T23U40">J_manipulator</span></span>]</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="27,10" id="srcline10">10</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="27,11" id="srcline11">11</a></span><span class="line"><span class="keyword">end</span></span></span>
+</pre>
+</body>
+</html>

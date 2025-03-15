@@ -1,0 +1,13 @@
+set COMPILER=lcc 
+				set COMPFLAGS=-c -noregistrylookup -DMX_COMPAT_32  -DMATLAB_MEX_FILE -I"C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\include" -I"C:\Program Files (x86)\MATLAB\R2015b\extern\include" -I"C:\Program Files (x86)\MATLAB\R2015b\simulink\include" -I"C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\mex"   
+				set OPTIMFLAGS= -DNDEBUG 
+				set DEBUGFLAGS=-g4 
+				set LINKER="C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\bin\lcclnk" 
+				set LINKFLAGS= -dll "%MATLAB%\extern\lib\win32\lcc\%ENTRYPOINT%.def" -L"C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\lib" -libpath "C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc" -libpath "C:\Program Files (x86)\MATLAB\R2015b\lib\win32" "%LIB_NAME%2.obj"
+				set LINKFLAGSPOST=libmx.lib libmex.lib libmat.lib 
+				set LINKDEBUGFLAGS=
+				set NAME_OUTPUT=/out:"%OUTDIR%%MEX_NAME%%MEX_EXT%"
+set PATH=C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\bin;C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\include;C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\mex;C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc;C:\Program Files (x86)\MATLAB\R2015b\extern\include\win32\;C:\Program Files (x86)\MATLAB\R2015b\extern\include;C:\Program Files (x86)\MATLAB\R2015b\simulink\include;C:\Program Files (x86)\MATLAB\R2015b\lib\win32;%MATLAB_BIN%;%PATH%
+set INCLUDE=C:\Program Files (x86)\MATLAB\R2015b\extern\include;;%INCLUDE%
+set LIB=C:\Program Files (x86)\MATLAB\R2015b\lib\win32;C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc;;%LIB%
+set LIBPATH=C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc;C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\lib\;C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\mex;%LIBPATH%

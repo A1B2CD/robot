@@ -1,0 +1,4 @@
+EXPORTS
+calculateTransformations
+calculateTransformations_initialize
+calculateTransformations_terminate

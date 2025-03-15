@@ -1,0 +1,4 @@
+./calculateTransformations.dll
+_calculateTransformations		_calculateTransformations
+_calculateTransformations_initialize		_calculateTransformations_initialize
+_calculateTransformations_terminate		_calculateTransformations_terminate
